@@ -3,60 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+ 
     <title>Clon de NETFLIX</title>
 </head>
 <body>
-    <head>
-        <div class="Titulo">
-            <h1>NETFLIX</h1>
+    <header class="page-header">
+        <div class="logo">
+            <h1>
+                <a href="https://www.netflix.com/">NETFLIX</a>
+            </h1>
         </div>
-    </head>
+    </header>
     <main>
-        <div class="Formulario">
-            <p id="titulo-formulario">Iniciar Sesión</p>
+        <form class="login-form">
+            <h2 class="login-form__title">Iniciar Sesión</h2>
 
-            <label for="email-nro"></label>
-            <input type="email" id="email-nro" name="email-nro">
+            <div class="login-form__input-group">
+                <input type="email" id="email-nro" name="email-nro" 
+                    class="login-form__input" 
+                    placeholder="Email o número de celular" 
+                    aria-label="Email o número de celular" required>
+            </div>
+            
+            <div class="login-form__input-group">
+                <input type="password" id="Contraseña" name="password" 
+                    class="login-form__input" 
+                    placeholder="Contraseña" 
+                    aria-label="Contraseña" required>
+            </div>
 
-            <label for="Contraseña"></label>
-            <input type="password" id="Contraseña" name="password">
+            <button type="submit" class="login-form__button-primary">Iniciar sesión</button>
 
-            <button>Iniciar sesión</button>
+            <p class="login-form__divider">O</p>
 
-            <p>O</p>
+            <button type="button" class="login-form__button-secondary">Usar un código de inicio de sesión</button>
 
-            <button>Usar un código de inicio de sesión</button>
+            <a href="Otra pagina" class="login-form__help-link">¿Olvidaste tu contraseña?</a>
 
-            <a href="Otra pagina">¿Olvidaste tu contraseña?</a>
-
-            <input type="checkbox" id="recordarme" name="recordarme">
+            <div class="login-form__remember">
+                <input type="checkbox" id="recordarme" name="recordarme">
             <label for="recordarme">Recordarme</label>
+            </div>
+            
+            <div class="login-form__first-time">
+                <p>¿Primera vez en netflix?</p>
+                <a href="Otra pagina">Suscríbete ya</a>
 
-            <p>¿Primera vez en netflix?</p>
-            <a href="Otra pagina">Suscríbete ya</a>
+            </div>
+            
+            <p class="login-form__recaptcha">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.</p>
 
-            <p>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.</p>
-
-            <a href="Otra pagina">Más info</a>
-        </div>
+            <a href="Otra pagina" class="login-form__more-info">Más info</a>
+        </form>
     </main>
-    <footer>
-        <p>¿Preguntas? Llama al 0 800 55821 (sin cargo)</p>
+    <footer class="page-footer">
+        <div class="footer-content">
+            <p class="footer-content__contact">¿Preguntas? Llama al 0 800 55821 (sin cargo)</p>
         
-        <div class="Opc-contacto">
-            <a href="otro lugar">Preguntas frecuentes</a>
-            <a href="otro lugar">Centro de ayuda</a>
-            <a href="otro lugar">Términos de uso</a>
-            <a href="otro lugar">Privacidad</a>
-            <a href="otro lugar">Preferencias de cookies</a>
-            <a href="otro lugar">Información empresarial</a>
-        </div>
+            <ul class="footer-content__links">
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Términos de uso</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Preferencias de cookies</a></li>
+                <li><a href="#">Información empresarial</a></li>
+            </ul>
 
-        <select name="idioma" id="idioma">
-            <option value="español">español</option>
-            <option value="ingles">ingles</option>
-        </select>
+            <select name="idioma" id="idioma" class="footer-content__language">
+                <option value="español">español</option>
+                <option value="ingles">ingles</option>
+            </select>
+        </div>
+        
     </footer>
 </body>
 </html>
