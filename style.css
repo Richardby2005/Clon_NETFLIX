@@ -57,6 +57,14 @@ input {
     border: none;
     color: white;
 }
+
+.error-message {
+    color: #ff4c4c;
+    font-size: 12px;
+    margin-top: -12px;
+    margin-bottom: 8px;
+    min-height: 15px;
+}
 .login-form__button-primary {
     width: 100%;
     background-color: red;
