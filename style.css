@@ -5,6 +5,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     
     color: white;
 
@@ -13,6 +14,8 @@ body {
 main {
     flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .page-header{
     padding-left: 20%;
@@ -25,13 +28,11 @@ main {
 }
 
 .login-form {
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-bottom: 50px;
+    max-width: 260px;
+    width: 100%;
+    margin: 50px 20px;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 50px;
-    padding-top: 0%;
-    height: 500px;
+    padding: 20px 50px;
 
     border: black solid 2px;
 }
@@ -42,12 +43,19 @@ main {
 .login-form__input-group {
     border: rgb(167, 167, 167) solid 1px;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 8px;
+    padding: 0px;
     margin-bottom: 16px;
+    width: 100%;
+    height: 36px;
+}
+.login-form__input-group input {
+    width: 100%;
+    height: 100%;
 }
 input {
     background-color: rgba(0, 0, 0, 0.7);
     border: none;
+    color: white;
 }
 .login-form__button-primary {
     width: 100%;
